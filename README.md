@@ -1,12 +1,12 @@
 PLACEMENT PROJECT FOR COLLEGE (React JS & Tailwindcss Installation Setup) : 
 STEP 1 : Installation of React/Vite 
-  npm create vite@latest
+npm create vite@latest
 
 STEP 2 : Run the React App
-  npm run dev
+npm run dev
 
 STEP 3 : Install the Tailwindcss
-  npm install tailwindcss @tailwindcss/vite
+npm install tailwindcss @tailwindcss/vite
 
 STEP 4 : Setup the vite.config.js Configuration : 
 
@@ -14,7 +14,6 @@ import { defineConfig } from 'vite'
 import tailwindcss from "@tailwindcss/vite"
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
 })
@@ -22,7 +21,7 @@ export default defineConfig({
 Add the @tailwindcss/vite package
 
 STEP 5 : Add Tailwind to CSS : 
-  @import "tailwindcss"
+@import "tailwindcss"
 
 STEP 6 : Test Tailwindcss
 
