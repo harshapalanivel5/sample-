@@ -1,20 +1,39 @@
-<<<<<<< HEAD
-# Placement_Project_For_College
-=======
-# React + Vite
+PLACEMENT PROJECT FOR COLLEGE (React JS & Tailwindcss Installation Setup) : 
+STEP 1 : Installation of React/Vite 
+  npm create vite@latest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+STEP 2 : Run the React App
+  npm run dev
 
-Currently, two official plugins are available:
+STEP 3 : Install the Tailwindcss
+  npm install tailwindcss @tailwindcss/vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+STEP 4 : Setup the vite.config.js Configuration : 
 
-## React Compiler
+import { defineConfig } from 'vite'
+import tailwindcss from "@tailwindcss/vite"
+import react from '@vitejs/plugin-react'
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+})
 
-## Expanding the ESLint configuration
+Add the @tailwindcss/vite package
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> f14f6ab (Project Started)
+STEP 5 : Add Tailwind to CSS : 
+  @import "tailwindcss"
+
+STEP 6 : Test Tailwindcss
+
+function App() {
+  return (
+    <div className="flex items-center justify-center h-screen bg-blue-500">
+      <h1 className="text-white text-3xl font-bold">
+        React + Tailwind CSS Setup 🎉
+      </h1>
+    </div>
+  );
+}
+
+export default App;
