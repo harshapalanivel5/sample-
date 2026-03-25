@@ -26,7 +26,7 @@ export default function App() {
           <div class=" flex gap-3">
             <div class=""><Landmark /></div>
             <div>
-              <h1 className="font-bold text-lg">GCE Srirangam</h1>
+              <h1 className="font-bold text-lg">GCE Sirangam</h1>
           
             <p className="text-sm text-gray-500">Placement Cell</p>
               </div>
